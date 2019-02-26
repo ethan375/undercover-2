@@ -1,0 +1,70 @@
+   @mixin pdp {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
+  grid-gap: 1.5rem;
+
+  &__text{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    align-self: start;
+  }
+
+  &__header{
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  &__hr{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%;
+  }
+}
+.pergolas{ 
+  @include pdp;
+}
+
+.retractaroofs{
+  @include pdp;
+}
+
+.arcadia{
+  @include pdp;
+}
+
+.commercial{
+  @include pdp;
+}
+
+.heaters{
+  @include pdp;
+}
+
+.residential{
+  @include pdp;
+}
+
+.retractable{
+  @include pdp;
+}
+
+.screens{
+  @include pdp;
+}
+
+
+@media screen and (max-width: 768px){ 
+  .pergolas,.retractaroofs,.arcadia,.commercial,.heaters,.residential,.retractable,.screens{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(autofit, 90rem);
+    grid-gap: 3rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

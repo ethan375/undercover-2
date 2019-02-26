@@ -1,0 +1,68 @@
+.social{
+  background-color: $primary-color;
+  grid-column: social-start/social-end;
+  grid-row: 1/-1;
+
+  display: grid;
+  grid-template-columns: .01fr auto;
+  grid-template-rows: 20rem repeat(7, min-content) 1fr;
+  grid-gap: 1.5rem;
+
+  &__item{
+    text-decoration: none;
+    color: $link-white;
+    font-size: 1.5rem;
+    transition: all .5s;
+  }
+
+  &__item:hover{
+    color:$light-grey-1;
+  }
+
+  &__facebook{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &__houzz{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  &__insta{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  &__twitter{
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  &__linkedin{
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+
+  &__pintrest{
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+
+  &__google{
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+}
+
+@media screen and (max-width: 768px){ 
+  .social{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    height: 20rem;
+    margin-top: -25px;
+  }
+  .social__item{
+    display: none;
+  }
+}

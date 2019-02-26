@@ -1,0 +1,14 @@
+.aboutus{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	&__header{
+		grid-column: 1/-1;
+		justify-self: center;
+		font-size: 6rem;
+	}
+
+	&__com{
+		grid-column: 1/-1;
+		font-size: 8rem;
+	}
+}

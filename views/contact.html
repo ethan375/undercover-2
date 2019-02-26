@@ -1,0 +1,59 @@
+ <div class="contact" > 
+    <h3 class="contact__header">Contact Us</h3>
+    <form class="contact__form" ng-submit="con.submitForm()" method="POST" action="https://script.google.com/a/undercoveroutdoors.com/macros/s/AKfycbzh7PuFXmL8DZ9RykwPyWug-fvmL1Z0mXydTupn/exec">
+        <h5 class="contact__form-header">Send A Message</h5>
+
+        <label class="contact__label" for="name">Your name: (required)</label>
+        <input class="contact__input" ng-model="con.name" class="contact__item contact__item--1" type="text">
+
+        <label class="contact__label" for="address">Full Address:</label>
+        <input class="contact__input" ng-model="con.address" class="contact__item contact__item--2" type="text">
+
+        <label class="contact__label" for="number">Phone Number:</label>
+        <input class="contact__input" ng-model="con.number"class="contact__item contact__item--3" type="text">
+
+        <label class="contact__label" for="email">Email Address:</label>
+        <input class="contact__input" ng-model="con.email" class="contact__item contact__item--4" name="email" type="text">
+
+        <label class="contact__label">Prefered Method Of Contact</label>
+        <select class="contact__input">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+        </select>
+
+        <label class="contact__label">Product Of Interest</label>
+        <select class="contact__input">
+          <option value="louvered roof">Louvered Roofs</option>
+          <option value="Commercial Awnings">Commercial Awnings</option>
+          <option value="Residential Awnings">Residential Awnings</option>
+          <option value="Retractable Roof">Retractable Roof</option>
+          <option value="Solar Screens">Solar Screens</option>
+          <option value="Outdoor Heaters">Outdoor Heaters</option>
+          <option value="Aluminum Pergola">Aluminum Pergola</option>
+        </select>
+        <label class="contact__label" for="message">Message:</label>
+        
+        <textarea ng-model="con.message" class="contact__message contact__input" rows="10" cols="5" > </textarea>
+        <button class="contact__submit">Submit</button>
+  </form>
+
+  <section class="contact__phone">
+      <h5 class="contact__phone__header">Call us</h5>
+      <a class="contact__link contact__phone__item" href="tel: 1-847-483-5463">847-483-5463</a>
+      <a class="contact__link contact__phone__item" href="tel: 1-800-967-4233">800-96-SHADE</a>
+      <a class="contact__link contact__phone__item" href="tel: 1-630-637-8474">630-637-8474</a>
+      <a class="contact__link contact__phone__item" href="tel: 1-708-478-8890">708-478-8890</a>
+      <label class="contact__phone__fax-label">Fax Number:</label>
+      <a class="contact__link contact__phone__fax" href="708-827-5817">708-827-5817</a>
+      <label class="contact__phone__email-label">Email:</label>
+      <a class="contact__link contact__phone__item" href="">info@undercoveroutdoors.com</a>
+  </section>
+
+  <section class="contact__follow">
+        <h5 class="contact__follow__header">Follow Us</h5>
+        <a class="contact__link contact__follow__item" href="https://www.instagram.com/user/ucoutdoors" target="_blank">Instagram</a>
+        <a class="contact__link contact__follow__item" href="https://www.facebook.com/ucoutdoors" target="blank">Facebook</a>
+        <a class="contact__link contact__follow__item" href="https://www.twitter.com/ucoutdoors" target="blank">Twitter</a>
+  </section>
+
+</div>
